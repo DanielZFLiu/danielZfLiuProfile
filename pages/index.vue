@@ -2,7 +2,7 @@
     <div class="main">
         <div class="canvas">
             <div class="title">
-                Library of Vitas
+                Library of Vita
             </div>
 
 
@@ -36,14 +36,15 @@
                     :book_classes="['epoch', 'exride', 'voithos']"
                     :book_descriptions="['2023 July - Now | Full Stack Developer | Epoch develops eye-catching brands, designs beautiful websites, and delivers campaigns that stand out from the norm.', 
                     '2023 July - Now | Main Web Developer | ExRide eliminates the stress and risks linked to selling cars privately.',
-                    '2023 August - Now | Main Developer | An AI assisted productivity app that aims to revolutionize the way productivity app works.']"
+                    '2023 August - Now | An AI assisted productivity app that aims to revolutionize the way productivity app works.']"
                     :book_links="['https://epochdesign-landing.vercel.app/', 'https://exride.ca/', '']"/>
 
                     <ShelfRow bg_text="About Me" 
-                    :book_names="['Intro']" 
-                    :book_classes="['daniel']"
-                    :book_descriptions="['Everything about Daniel Liu']"
-                    :book_links="['']"/>
+                    :book_names="['Intro', 'LinkedIn']" 
+                    :book_classes="['daniel', 'linkedin']"
+                    :book_descriptions="['Everything about Me', 
+                    'My LinkedIn']"
+                    :book_links="['', 'https://www.linkedin.com/in/danielzfliu']"/>
 
                     <ShelfRow bg_text="Blog" 
                     :book_names="['LLM&LTM']" 

@@ -62,13 +62,15 @@
     font-weight: bold;
     font-style: italic;
     height: 5vw;
-    transform: translateY(2vw);
+    transform: translateY(1vw);
 }
 
 .blog{
     background-color: #3D0C02;
     color: #60898f;
     font-weight: bold;
+    height: 8vw;
+    transform: translateY(-1vw);
 }
 
 .voithos{
@@ -78,4 +80,10 @@
     transform: translateY(1vw);
 }
 
+.linkedin{
+    background-color: #8b8289;
+    color: #B2BEB5;
+    font-weight: bold;
+    font-style: italic;
+}
 </style>
