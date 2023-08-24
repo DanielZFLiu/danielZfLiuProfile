@@ -81,8 +81,8 @@
 }
 
 .linkedin{
-    background-color: #8b8289;
-    color: #B2BEB5;
+    background-color: #0072b1;
+    color: white;
     font-weight: bold;
     font-style: italic;
 }

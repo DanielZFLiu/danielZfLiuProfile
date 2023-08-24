@@ -42,8 +42,8 @@
                     <ShelfRow bg_text="About Me" 
                     :book_names="['Intro', 'LinkedIn']" 
                     :book_classes="['daniel', 'linkedin']"
-                    :book_descriptions="['Everything about Me', 
-                    'My LinkedIn']"
+                    :book_descriptions="['About Daniel Liu', 
+                    'Daniel Liu LinkedIn Profile']"
                     :book_links="['', 'https://www.linkedin.com/in/danielzfliu']"/>
 
                     <ShelfRow bg_text="Blog" 
@@ -69,6 +69,9 @@
 </script>
 
 <style scoped>
+/* ******************************************************************** */
+/* ****************************General Classes************************* */
+/* ******************************************************************** */
 @font-face {
   font-family: "EBGaramond";
   src: local("EBGaramond"),
@@ -101,6 +104,11 @@
     background: var(--soap-stone-white);
 }
 
+
+
+/* ******************************************************************** */
+/* *********************************Title****************************** */
+/* ******************************************************************** */
 .title{
     /* position */
     margin-top: 2vw;
@@ -132,6 +140,11 @@
     }
 }
 
+
+
+/* ******************************************************************** */
+/* ****************************Shelves********************************* */
+/* ******************************************************************** */
 .shelves{
     /* position */
     margin-top: 3vw;
@@ -160,13 +173,12 @@
     }
 }
 
-
-
 .shelf{
     /* shape */
     width: 50vw;
     height: 62vw;
     border: solid rgb(237, 237, 237) 0.5px;
+    border-radius: 1%;
 
     /* inner shape */
     background-color: var(--ceramic-white);
