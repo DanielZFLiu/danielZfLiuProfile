@@ -6,8 +6,31 @@
     </div>
 </template>
 
-<script setup>
-    const { title, description, link } = defineProps(['title', 'description', 'link']);
+<script>
+export default {
+    mounted() { },
+    data() {
+        return {
+        };
+    },
+    methods: {
+        // externalLink(){
+        //     if (this.link.includes('/')) {
+        //         return true;
+        //     }
+        //     else{
+        //         return false;
+        //     }
+        // }
+    },
+    props: {
+        title: String, 
+        description: String, 
+        link: String,
+    },
+    setup(props){
+    }
+}
 </script>
 
 <style scoped>

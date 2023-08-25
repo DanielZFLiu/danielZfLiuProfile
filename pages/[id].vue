@@ -1,6 +1,8 @@
 <template>
     <div class="main">
         <div class="canvas">
+            <OpenBook :id='id'/>
+
             <div class="title">
                 Library of Vita
             </div>
@@ -64,7 +66,8 @@
     </div>
 </template>
 
-<script>
+<script setup>
+    const { id } = useRoute().params;
 </script>
 
 <style scoped>
@@ -122,23 +125,7 @@
     /* shape */
     height: min-content;
     width: max-content;
-
-    /* animation */
-    animation: titleAppear forwards 7.5s;
 }
-
-@keyframes titleAppear {
-    0%{
-        opacity: 0;
-    }
-    66%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 0.7;
-    }
-}
-
 
 
 /* ******************************************************************** */
@@ -154,22 +141,6 @@
 
     /* inner shape */
     gap: 5vw;
-
-    /* animation */
-    animation: scrollPastShelves forwards 5s;
-}
-
-@keyframes scrollPastShelves {
-    from{
-        margin-left: 0;  
-        margin-top: -10vw;
-        transform: scale(0.5);
-    }
-    to{
-        margin-left: calc(-55vw * 19 - 30vw);
-        margin-top: 3vw;
-        transform: scale(1);
-    }
 }
 
 .shelf{

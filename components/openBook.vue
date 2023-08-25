@@ -1,77 +1,59 @@
 <template>
         <div 
-            
-            class="open_book_canvas flex justify-center items-center">
+            class="open_book_canvas flex justify-center items-center"
+            id="openBook">
+            <div class="h-full w-full fixed" @click = "closeBook"></div>
             <div class="book_cover_left">
                 <div class="left_page_header"></div>
-                <div class="left_page">
-                    <article>
-                        <!-- header -->
-                        <header> Intro </header>
-                        <!-- heading -->
-                        <h2> A Brief Intro </h2>
-                        <!-- heading decoration -->
-                        <div class="flex justify-center items-center">
-                            <div class="header_decoration"></div>
-                            <img class="header_decoration_middle" src="../assets/header_decoration.svg" alt="header decoration">
-                            <div class="header_decoration"></div>
-                        </div>
-                        <!-- main body -->
-                        <p>
-                            As the great H.P. Lovecraft once said: "I like coffee exceedingly." 
-                            I found myself agreeing with this sentiment more and more
-                            as time drags on; the more I code and study, the less something light 
-                            could lift me, and only the most dark and soulless of coffee could
-                            enrich my spirit. Such is only fitting, as the world of coding is too 
-                            creative and exciting to be taken lightly. One needs calm and balance 
-                            to work with the tools they are gifted with.
-                        </p>
-                        <p>
-                            It is unfortunate that I lacked these traits. I knew
-                        </p>
-                        <!-- footer -->
-                        <footer>1</footer>
-                    </article>
-                </div>
+                    <component :is="left_page"></component> 
                 <div class="left_page_footer"></div>
             </div>
             <div class="book_spine"></div>
             <div class="book_cover_right">
                 <div class="right_page_header"></div>
-                <div class="right_page">
-                    <article>
-                        <!-- header -->
-                        <header>Daniel Liu</header>
-                        <p>
-                           the importance of them, but the gap between knowing 
-                           and doing is insurmountable. To my inability, I replied with the sole 
-                           logical response: an existential crisis, the only common
-                           trait among men. Nihilism took a hold of me shortly after,
-                           but before long it dawned on me that chaos is no way to live your life.
-                        </p>
-                        <p>
-                            I chose what most people chose, to dedicate my life on finding an answer.
-                            Three fields hold potential. The world wide web, a hivemind, the
-                            interconnected web of human society. AI, our first attempt at
-                            creating something greater than us, a monster in the making.
-                            And finally, writing, what we teach with. I will bet my sanity that
-                            the H.P.Lovecraft collection sitting on my shelf will outlast this 
-                            library, and probably me.
-                        </p>
-                        <p>
-                            And thus I have decided: to serve the collective, to explore, and to extend
-                            history. With luck, one of these paths will lead me to the answer I'm seeking.
-                        </p>
-                        <footer>2</footer>
-                    </article>
-                </div>
+                    <component :is="right_page"></component> 
                 <div class="right_page_footer"></div>
             </div>
         </div>
 </template>
 
-<script setup>
-
+<script>
+export default {
+    mounted() { },
+    data() {
+        return {
+        };
+    },
+    methods: {
+        // book closing animation
+        closeBook() {
+            const book = document.getElementById('openBook');
+            book.style.opacity = 0;
+            setTimeout(() => {
+                book.style.display = 'none';
+            }, 1000);
+        }
+    },
+    props: {
+        id: String,
+    },
+    setup(props){
+        // https://github.com/nuxt/nuxt/issues/14036
+        // resolveComponent accepts string, not variables
+        let left_page;
+        let right_page;
+        if (props.id === "intro") {
+            left_page = resolveComponent('BooksIntroIntro1');
+            right_page = resolveComponent('BooksIntroIntro2');
+        }
+        return {left_page, right_page};
+    },
+    mounted(){
+        // book opening animation
+        const book = document.getElementById('openBook');
+        book.style.opacity = 1;
+    }
+}
 </script>
 
 <style scoped>
@@ -97,18 +79,30 @@
     /* interaction */
     z-index: 1;
 
+    /* inner shape */
     opacity: 0;
-    animation: showOpenBook forwards 1s;
+    transition: opacity 1s;
+    /* animation: openBook 0.5s forwards; */
 }
 
-@keyframes showOpenBook {
+/* @keyframes openBook {
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
+
+/* @keyframes closeBook {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+} */
 
 
 /* ******************************************************************** */
