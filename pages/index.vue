@@ -1,10 +1,11 @@
 <template>
     <div class="main">
         <div class="canvas">
+            <OpenBook />
+
             <div class="title">
                 Library of Vita
             </div>
-
 
             <div class="shelves flex">
                 <!-- empty book shelves -->
@@ -42,8 +43,8 @@
                     <ShelfRow bg_text="About Me" 
                     :book_names="['Intro', 'LinkedIn']" 
                     :book_classes="['daniel', 'linkedin']"
-                    :book_descriptions="['About Daniel Liu', 
-                    'Daniel Liu LinkedIn Profile']"
+                    :book_descriptions="['An obscure introduction to Daniel Liu', 
+                    'A professional introduction to Daniel Liu']"
                     :book_links="['', 'https://www.linkedin.com/in/danielzfliu']"/>
 
                     <ShelfRow bg_text="Blog" 
@@ -66,6 +67,7 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
