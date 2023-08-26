@@ -49,7 +49,7 @@
 
                     <ShelfRow bg_text="Blog" 
                     :book_names="['LLM&LTM', 'Centering']" 
-                    :book_classes="['blog', 'blog']"
+                    :book_classes="['blog', 'blog2']"
                     :book_descriptions="['How to enable long term memory in large language models',
                     'How to center elements when building websites']"
                     :book_links="['', '/center']"/>

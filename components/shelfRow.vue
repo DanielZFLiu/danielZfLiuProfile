@@ -74,6 +74,14 @@
     transform: translateY(-1vw);
 }
 
+.blog2{
+    background-color: #3D0C02;
+    color: #60898f;
+    font-weight: bold;
+    border-right: solid rgb(56, 56, 56) 1px;
+    transform: translateY(-0.5vw);
+}
+
 .voithos{
     background-color: #cba5a5;
     color: #F0FFFF;
