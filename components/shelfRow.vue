@@ -69,6 +69,7 @@
     background-color: #3D0C02;
     color: #60898f;
     font-weight: bold;
+    border-right: solid rgb(56, 56, 56) 1px;
     height: 8vw;
     transform: translateY(-1vw);
 }

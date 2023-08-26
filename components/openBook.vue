@@ -46,6 +46,10 @@ export default {
             left_page = resolveComponent('BooksIntroIntro1');
             right_page = resolveComponent('BooksIntroIntro2');
         }
+        else if(props.id === "center"){
+            left_page = resolveComponent('BooksCenterTutorialCenter1');
+            right_page = resolveComponent('BooksCenterTutorialCenter2');
+        }
         return {left_page, right_page};
     },
     mounted(){
