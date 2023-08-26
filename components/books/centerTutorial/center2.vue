@@ -11,16 +11,16 @@
                 font-family: 'Crimson Text';
                 font-size: 1.2vw;
                 margin-bottom: 4vw;
-                position: relative;
-                top: 3vw;">
+                top: 3vw;
+                
+                position: relative;">
 
                 <!-- inner_div -->
                 <div style="width: max-content;
-
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);">
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);">
                     Vertically and Horizontally Centered
                 </div>
             </div>
@@ -28,8 +28,8 @@
             <div class="code h-[11vw]">
                 .inner_div{<br>
                 &nbsp position: absolute;<br>
-                &nbsp left: 50%;<br>
-                &nbsp top: 50%;<br>
+                &nbsp left: 50%; <br>
+                &nbsp top: 50%; <br>
                 &nbsp transform: translate(-50%, -50%);<br>
                 }
             </div>
@@ -58,6 +58,8 @@
                 &nbsp margin-left: auto; margin-right: auto;<br>
                 }
             </div>
+
+            <!-- https://daniel-zf-liu-profile.vercel.app/center -->
 
             <!-- footer -->
             <footer>2</footer>

@@ -33,7 +33,7 @@
 
             <div class="code">
                 .outer_div{<br>
-                &nbsp display: flex;<br>
+                &nbsp display: flex; <br>
                 &nbsp justify-content: center;<br>
                 &nbsp align-items: center;<br>
                 }
