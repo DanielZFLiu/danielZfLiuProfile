@@ -12,7 +12,7 @@
                 <div class="header_decoration"></div>
             </div>
             <!-- main body -->
-            <p>
+            <!-- <p>
                 As the great H.P. Lovecraft once said: "I like coffee exceedingly." 
                 I found myself agreeing with this sentiment more and more
                 as time drags on; the more I code and study, the less something light 
@@ -23,6 +23,17 @@
             </p>
             <p>
                 It is unfortunate that I still lack these traits. I
+            </p> -->
+            <p>
+                As the illustrious H.P. Lovecraft once articulated, 
+                "I am excessively fond of coffee." This sentiment now ensnares
+                 my very being in a vise-like grip as the relentless march of time unfurls. 
+                 The deeper I delve into the intricate labyrinth of code and study, 
+                 the more apparent it becomes that ethereal frivolities cannot hoist 
+                 my weary soul from the abyss. Only the darkest and most void-like 
+                 brews of coffee have the potency to embolden my spirit. Such an 
+                 inclination is but fitting, for the arcane artistry of coding is 
+                 far too profound and
             </p>
             <!-- footer -->
             <footer>1</footer>

@@ -4,14 +4,16 @@
             id="openBook">
             <div class="h-full w-full fixed" @click = "closeBook"></div>
             <div class="book_cover_left">
+                <button @click="turn_left" class="absolute w-full h-full"></button>
                 <div class="left_page_header"></div>
-                    <component :is="left_page"></component> 
+                    <component :is="pages[page_counter]"></component> 
                 <div class="left_page_footer"></div>
             </div>
             <div class="book_spine"></div>
             <div class="book_cover_right">
+                <button @click="turn_right" class="absolute w-full h-full"></button>
                 <div class="right_page_header"></div>
-                    <component :is="right_page"></component> 
+                    <component :is="pages[page_counter + 1]"></component> 
                 <div class="right_page_footer"></div>
             </div>
         </div>
@@ -22,6 +24,7 @@ export default {
     mounted() { },
     data() {
         return {
+            page_counter: 0,
         };
     },
     methods: {
@@ -32,7 +35,17 @@ export default {
             setTimeout(() => {
                 book.style.display = 'none';
             }, 1000);
-        }
+        },
+        turn_left(){
+            if (this.page_counter != 0) {
+                this.page_counter -= 2;
+            }
+        },
+        turn_right(){
+            if (this.page_counter + 2 != this.pages.length) {
+                this.page_counter += 2;
+            }
+        },
     },
     props: {
         id: String,
@@ -40,17 +53,20 @@ export default {
     setup(props){
         // https://github.com/nuxt/nuxt/issues/14036
         // resolveComponent accepts string, not variables
-        let left_page;
-        let right_page;
+        let pages;
         if (props.id === "intro") {
-            left_page = resolveComponent('BooksIntroIntro1');
-            right_page = resolveComponent('BooksIntroIntro2');
+            let page1 = resolveComponent('BooksIntroIntro1');
+            let page2 = resolveComponent('BooksIntroIntro2');
+            let page3 = resolveComponent('BooksIntroIntro3');
+            let page4 = resolveComponent('BooksIntroIntro4');
+            pages = [page1, page2, page3, page4];
         }
         else if(props.id === "center"){
-            left_page = resolveComponent('BooksCenterTutorialCenter1');
-            right_page = resolveComponent('BooksCenterTutorialCenter2');
+            let left_page = resolveComponent('BooksCenterTutorialCenter1');
+            let right_page = resolveComponent('BooksCenterTutorialCenter2');
+            pages = [left_page, right_page];
         }
-        return {left_page, right_page};
+        return {pages};
     },
     mounted(){
         // book opening animation
