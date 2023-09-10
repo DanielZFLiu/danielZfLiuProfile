@@ -46,11 +46,11 @@
                     :book_links="['/intro', 'https://www.linkedin.com/in/danielzfliu']"/>
 
                     <ShelfRow bg_text="Blog" 
-                    :book_names="['LLM&LTM', 'Centering']" 
-                    :book_classes="['blog', 'blog2']"
+                    :book_names="['LLM&LTM', 'Centering', 'CSC301']" 
+                    :book_classes="['blog', 'blog2', 'blog2']"
                     :book_descriptions="['How to enable long term memory in large language models',
-                    'How to center elements when building websites']"
-                    :book_links="['', '/center']"/>
+                    'How to center elements when building websites', 'A brief pitch for my fellow classmates in CSC301']"
+                    :book_links="['', '/center', '/csc301']"/>
 
                     <!-- redundant rows -->
                     <section>
