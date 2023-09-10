@@ -66,6 +66,13 @@ export default {
             let right_page = resolveComponent('BooksCenterTutorialCenter2');
             pages = [left_page, right_page];
         }
+        else if(props.id === "csc301"){
+            let left_page = resolveComponent('Books301PitchPitch1');
+            let right_page = resolveComponent('Books301PitchPitch2');
+            let page3 = resolveComponent('Books301PitchPitch3');
+            let page4 = resolveComponent('BooksIntroIntro4');
+            pages = [left_page, right_page, page3, page4];
+        }
         return {pages};
     },
     mounted(){
