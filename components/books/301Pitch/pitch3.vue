@@ -7,7 +7,8 @@
             <p>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• Joining this project offers a unique opportunity 
                 to refine your UI/UX skills. You'll also gain valuable startup 
-                collaboration experience, a vital asset for your future career. Your contributions will 
+                collaboration experience, as well as experience with big data project architecture, 
+                a vital asset for your future career. Your contributions will 
                 drive Voithos' growth and build an impressive portfolio showcasing your innovative design 
                 and development expertise. <br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• For more details, please review our Voithos 

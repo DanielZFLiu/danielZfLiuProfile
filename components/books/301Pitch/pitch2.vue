@@ -8,7 +8,7 @@
                 designed to benefit all web developers. <br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• By joining us, you'll gain expertise in web 
                 development, popular frontend frameworks (Vue, Nuxt, and TailwindCSS), web component 
-                design, and teamwork. <br>
+                design, database architecture, and teamwork. <br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp• For more details, please review 
                 our proposal document <a href="https://shorturl.at/gDEMP" style="color: blue">here</a>
                 and visit our website <a href="https://www.epochdesign.dev/" style="color: blue">here</a>
@@ -20,7 +20,7 @@
                 developing 
                 Voithos' frontend, giving students the chance to shape its user experience and interface, 
                 enhancing intuitiveness, user-friendliness, and visual appeal. <br>
-                To turn the page, click the right edge of the book ----->
+                To turn the page, click the right edge of the book ---->
             </p>
             <footer>2</footer>
         </article>
